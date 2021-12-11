@@ -1,0 +1,21 @@
+root@750e16d9a1eb:/# apt-get -y install curl                                                                          
+Reading package lists... Done
+.
+.
+
+root@750e16d9a1eb:/# curl -sL https://deb.nodesource.com/setup_16.x | bash                                                                                                                                                                  
+## Installing the NodeSource Node.js 16.x repo...
+.
+.
+.
+
+root@750e16d9a1eb:/# apt install -y nodejs   
+Reading package lists... Done 
+.
+.
+.
+
+root@750e16d9a1eb:/# node /usr/src/app/index.js
+Hello World
+
+root@750e16d9a1eb:/#
