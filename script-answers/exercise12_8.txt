@@ -1,0 +1,30 @@
+$ docker exec -it todo-backend_mongo_1 bash
+root@83901e287bf9:/# mongo -u root -p example
+MongoDB shell version v5.0.5
+.
+.
+.
+  
+> show dbs
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+
+> use the_database
+switched to db the_database
+
+> show collections
+todos
+
+> db.todos.find({})
+{ "_id" : ObjectId("61b614e74efc4bd825824484"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("61b614e74efc4bd825824485"), "text" : "Learn about containers", "done" : false }
+
+> db.todos.insertOne({text: "Increase the number of tools in my toolbelt", done: false})
+{"acknowledged" : true, "insertedId" : ObjectId("61b619158a6adf4ec769287f")}
+
+> db.todos.find({})
+{ "_id" : ObjectId("61b614e74efc4bd825824484"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("61b614e74efc4bd825824485"), "text" : "Learn about containers", "done" : false }
+{ "_id" : ObjectId("61b619158a6adf4ec769287f"), "text" : "Increase the number of tools in my toolbelt", "done" : false }         
