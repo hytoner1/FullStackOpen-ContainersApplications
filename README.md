@@ -3,8 +3,9 @@
 
 HY Full Stack Open course part 12.
 
-**Currently Borked due to WSL/Docker issues
-*Maybe I'll finish this using a linux system at some later point.
+**Currently Borked due to WSL/Docker issues**
+
+*Maybe I'll finish this using a linux system at some later point.*
 
 Tasks 12.1 - 12.3 done with `script` command, but the output was so messy that 12.4 was done by copy-pasting.
 
